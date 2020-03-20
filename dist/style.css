@@ -1,3 +1,17 @@
 body {
-  background-color: red;
+  background-image: url(images/display.jpg);
+  background-size: 600px 580px ;
+  background-repeat: no-repeat;
+}
+
+.nav-link{
+  color: black;
+  font-weight: 100;
+  font-size: 1.34rem;
+  font-family: fantasy;
+}
+
+.nav-link:hover{
+  color: red;
+  
 }
