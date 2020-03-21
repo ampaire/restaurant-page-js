@@ -1,7 +1,8 @@
 body {
   background-image: url(images/display.jpg);
-  background-size: 600px 580px ;
+  background-size: 600px 600px;
   background-repeat: no-repeat;
+  background-color: rgba(16, 109, 89, 0.9);
 }
 
 .nav-link{
@@ -14,4 +15,19 @@ body {
 .nav-link:hover{
   color: red;
   
+}
+
+.homepage {
+  overflow: hidden;
+  position: relative;
+  margin-top: 200px; 
+}
+
+.welcome h1{
+  color: white;
+  float: right;
+}
+.content .container{
+  font-family: fantasy;
+  margin-left: 68%;
 }
