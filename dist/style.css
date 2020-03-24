@@ -31,3 +31,15 @@ body {
   font-family: fantasy;
   margin-left: 68%;
 }
+
+.menu-section {
+  margin-top: 7%;
+  font-family: fantasy;
+  color: rgb(250, 249, 249);
+}
+
+.menu-block {
+  margin-left: 10%;
+  font-family: fantasy;
+  color: rgb(250, 249, 249);
+}

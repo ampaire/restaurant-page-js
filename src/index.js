@@ -1,4 +1,5 @@
 import homepage from "./modules/home";
+import menu from "./modules/menu";
 
 const addItems = document.getElementById('content');
 
