@@ -6,28 +6,32 @@ body {
   overflow: hidden;
 }
 
-.nav-link{
+.nav-link {
   color: black;
   font-weight: 100;
   font-size: 1.34rem;
   font-family: fantasy;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: red;
-  
+  background-color: white;
+}
+
+.nav-link{
+  background-color: rgba(26, 117, 98, 0.9);
 }
 
 .homepage {
   position: relative;
-  margin-top: 200px; 
+  margin-top: 200px;
 }
 
-.welcome h1{
+.welcome h1 {
   color: white;
   float: right;
 }
-.content .container{
+.content .container {
   font-family: fantasy;
   margin-left: 68%;
 }
@@ -61,13 +65,29 @@ body {
   background-color: rgba(0, 17, 13, 0.6);
 }
 
-.blinking{
-    animation:blinkingText 1.3s infinite;
+.blinking {
+  animation: blinkingText 1.3s infinite;
 }
-@keyframes blinkingText{
-    0%{     color: rgb(0, 0, 0);    }
-    49%{    color: rgb(255, 255, 255); }
-    60%{    color: transparent; }
-    99%{    color: white;  }
-    100%{   color: #000;    }
+@keyframes blinkingText {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  49% {
+    color: rgb(255, 255, 255);
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: white;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.card {
+  width: 40vw;
+  height: 50vh;
+  margin-left: 40%;
 }

@@ -1,6 +1,5 @@
 import homepage from './modules/home';
 import menu from './modules/menu';
-import special from './modules/special';
 import contact from './modules/contact';
 
 const addItems = document.getElementById('content');
@@ -14,7 +13,6 @@ start();
 
 const homePage = document.getElementById('#home');
 const menuPage = document.getElementById('#menu');
-const specialPage = document.getElementById('#special');
 const contactPage = document.getElementById('#contact');
 
 const togglePage = (event) => {
@@ -23,9 +21,6 @@ const togglePage = (event) => {
   } else if (event.target === menuPage) {
     addItems.innerHTML = '';
     addItems.appendChild(menu());
-  } else if (event.target === specialPage) {
-    addItems.innerHTML = '';
-    addItems.appendChild(special());
   } else {
     addItems.innerHTML = '';
     addItems.appendChild(contact());
@@ -34,5 +29,4 @@ const togglePage = (event) => {
 
 homePage.addEventListener('click', togglePage);
 menuPage.addEventListener('click', togglePage);
-specialPage.addEventListener('click', togglePage);
 contactPage.addEventListener('click', togglePage);
