@@ -2,7 +2,7 @@ body {
   background-image: url(images/display.jpg);
   background-size: 600px 800px;
   background-repeat: no-repeat;
-  background-color: rgba(26, 117, 98, 0.9);
+  background-color: rgb(26, 117, 98);
   overflow: hidden;
 }
 
@@ -90,4 +90,14 @@ body {
   width: 40vw;
   height: 50vh;
   margin-left: 40%;
+  font-size: 1.52rem;
+  background-color: rgba(26, 117, 98, 0.9);
+}
+
+.card h3 {
+  font-size: 3rem;
+}
+
+.phrase {
+  font-size: 1.52rem;
 }
