@@ -146,11 +146,6 @@ const menu = () => {
     foodTitle.innerHTML = `<a href='#'>${food.title}</a>`;
     foodContent.appendChild(foodTitle);
 
-    const foodLink = document.createElement('a');
-    foodLink.setAttribute('href', '#');
-    foodLink.inner = food.title;
-    foodTitle.appendChild(foodLink);
-
     const foodcaption = document.createElement('span');
     foodcaption.classList.add('food-caption');
     foodcaption.innerHTML = food.caption;
@@ -177,6 +172,57 @@ const menu = () => {
   menuTitle3.classList.add('menu-title');
   menuTitle3.innerHTML = 'Drinks';
   menuItem3.appendChild(menuTitle3);
+
+  drinks.forEach((drink) => {
+    const drinksContent = document.createElement('div');
+    drinksContent.classList.add('menu-content');
+    menuItem3.appendChild(drinksContent);
+
+    const row5 = document.createElement('div');
+    row5.classList.add('row');
+    drinksContent.appendChild(row5);
+
+    const col9 = document.createElement('div');
+    col9.classList.add('col-lg-3', 'col-md-3', 'col-sm-3', 'col-xs-12');
+    row5.appendChild(col9);
+
+    const drinkImg = document.createElement('div');
+    drinkImg.classList.add('drink-img');
+    col9.appendChild(drinkImg);
+
+    const img = document.createElement('img');
+    img.setAttribute('src', drink.img);
+    img.setAttribute('alt', drink.title);
+    img.classList.add('img-div');
+    drinkImg.appendChild(img);
+
+    const col10 = document.createElement('div');
+    col10.classList.add('col-lg-9', 'col-md-9', 'col-sm-9', 'col-xs-12');
+    row5.appendChild(col10);
+
+    const dishContent = document.createElement('div');
+    dishContent.classList.add('dish-content');
+    col10.appendChild(dishContent);
+
+    const dishTitle = document.createElement('h5');
+    dishTitle.classList.add('dish-title');
+    dishTitle.innerHTML = `<a href='#'>${drink.title}</a>`;
+    dishContent.appendChild(dishTitle);
+
+    const drinkCaption = document.createElement('span');
+    drinkCaption.classList.add('dish-caption');
+    drinkCaption.innerHTML = drink.caption;
+    dishContent.appendChild(drinkCaption);
+
+    const drinkprice = document.createElement('div');
+    drinkprice.classList.add('dish-price');
+    dishContent.appendChild(drinkprice);
+
+    const priceTag = document.createElement('p');
+    priceTag.innerHTML = drink.price;
+    drinkprice.appendChild(priceTag);
+  });
+
 
   return menuItems;
 };

@@ -19,7 +19,6 @@ body {
 }
 
 .homepage {
-  overflow: hidden;
   position: relative;
   margin-top: 200px; 
 }
@@ -40,7 +39,6 @@ body {
 }
 
 .menu-block {
-  /* margin-left: 10%; */
   font-family: fantasy;
   color: rgb(250, 249, 249);
 }
@@ -56,4 +54,20 @@ body {
   height: 100px;
   z-index: 100;
   position: absolute;
+}
+
+.containers .welcome {
+  margin-top: 5%;
+  background-color: rgba(0, 17, 13, 0.6);
+}
+
+.blinking{
+    animation:blinkingText 1.3s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(0, 0, 0);    }
+    49%{    color: rgb(255, 255, 255); }
+    60%{    color: transparent; }
+    99%{    color: white;  }
+    100%{   color: #000;    }
 }

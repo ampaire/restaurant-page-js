@@ -1,5 +1,7 @@
-import homepage from "./modules/home";
-import menu from "./modules/menu";
+import homepage from './modules/home';
+import menu from './modules/menu';
+import special from './modules/special';
+import contact from './modules/contact';
 
 const addItems = document.getElementById('content');
 
@@ -34,5 +36,3 @@ homePage.addEventListener('click', togglePage);
 menuPage.addEventListener('click', togglePage);
 specialPage.addEventListener('click', togglePage);
 contactPage.addEventListener('click', togglePage);
-
-
