@@ -1,8 +1,9 @@
 body {
   background-image: url(images/display.jpg);
-  background-size: 600px 600px;
+  background-size: 600px 800px;
   background-repeat: no-repeat;
-  background-color: rgba(16, 109, 89, 0.9);
+  background-color: rgba(26, 117, 98, 0.9);
+  overflow: hidden;
 }
 
 .nav-link{
@@ -39,7 +40,20 @@ body {
 }
 
 .menu-block {
-  margin-left: 10%;
+  /* margin-left: 10%; */
   font-family: fantasy;
   color: rgb(250, 249, 249);
+}
+
+.img-div {
+  width: 100px;
+  height: 80px;
+  margin: 2%;
+}
+
+.img-div:hover {
+  width: 120px;
+  height: 100px;
+  z-index: 100;
+  position: absolute;
 }

@@ -31,7 +31,7 @@ const menu = () => {
       img: 'images/nyamachoma.jpg',
       title: 'East African Nyama Choma',
       caption: 'beef, goat meat, lamb',
-      price: '$15',
+      price: '$11',
     },
     {
       img: 'images/full-chkn.jpg',
@@ -40,21 +40,27 @@ const menu = () => {
       price: '$14',
     },
     {
-      img: 'media/more.jpg',
+      img: 'images/more.jpg',
       title: 'Chips and Mchomo',
       caption: 'Plate of chips and Mchomo',
-      price: '$9',
+      price: '$14',
     },
     {
       img: 'images/nyama.jpg',
       title: 'Roasted meat',
       caption: 'Roasted Goat or beef ',
-      price: '$11',
+      price: '$12',
     },
     {
       img: 'images/rolex.jpg',
       title: 'UGRolex',
       caption: 'Meat rolex, vegetable rolex',
+      price: '$13',
+    },
+    {
+      img: 'images/luwombo.jpg',
+      title: 'Chicken Luwombo',
+      caption: 'Whole chicken Luwombo',
       price: '$13',
     },
   ];
@@ -120,8 +126,44 @@ const menu = () => {
     const foodImg = document.createElement('div');
     foodImg.classList.add('food-img');
     col6.appendChild(foodImg);
-  });
 
+    const img = document.createElement('img');
+    img.setAttribute('src', food.img);
+    img.setAttribute('alt', food.title);
+    img.classList.add('img-div');
+    foodImg.appendChild(img);
+
+    const col7 = document.createElement('div');
+    col7.classList.add('col-lg-9', 'col-md-9', 'col-sm-9', 'col-xs-12');
+    row4.appendChild(col7);
+
+    const foodContent = document.createElement('div');
+    foodContent.classList.add('food-content');
+    col7.appendChild(foodContent);
+
+    const foodTitle = document.createElement('h5');
+    foodTitle.classList.add('food-title');
+    foodTitle.innerHTML = `<a href='#'>${food.title}</a>`;
+    foodContent.appendChild(foodTitle);
+
+    const foodLink = document.createElement('a');
+    foodLink.setAttribute('href', '#');
+    foodLink.inner = food.title;
+    foodTitle.appendChild(foodLink);
+
+    const foodcaption = document.createElement('span');
+    foodcaption.classList.add('food-caption');
+    foodcaption.innerHTML = food.caption;
+    foodContent.appendChild(foodcaption);
+
+    const foodPrice = document.createElement('div');
+    foodPrice.classList.add('food-price');
+    foodContent.appendChild(foodPrice);
+
+    const priceTag = document.createElement('p');
+    priceTag.innerHTML = food.price;
+    foodPrice.appendChild(priceTag);
+  });
 
   const col8 = document.createElement('div');
   col8.classList.add('col-lg-4', 'col-md-4', 'col-sm-6', 'col-xs-12', 'mb40');
@@ -139,4 +181,3 @@ const menu = () => {
   return menuItems;
 };
 export default menu;
-
