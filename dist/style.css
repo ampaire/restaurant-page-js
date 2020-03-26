@@ -1,0 +1,103 @@
+body {
+  background-image: url(images/display.jpg);
+  background-size: 600px auto;
+  background-repeat: no-repeat;
+  background-color: rgb(26, 117, 98);
+  overflow: hidden;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 100;
+  font-size: 1.34rem;
+  font-family: fantasy;
+}
+
+.nav-link:hover {
+  color: red;
+  background-color: white;
+}
+
+.nav-link{
+  background-color: rgba(26, 117, 98, 0.9);
+}
+
+.homepage {
+  position: relative;
+  margin-top: 200px;
+}
+
+.welcome h1 {
+  color: white;
+  float: right;
+}
+.content .container {
+  font-family: fantasy;
+  margin-left: 68%;
+}
+
+.menu-section {
+  margin-top: 7%;
+  font-family: fantasy;
+  color: rgb(250, 249, 249);
+}
+
+.menu-block {
+  font-family: fantasy;
+  color: rgb(250, 249, 249);
+}
+
+.img-div {
+  width: 100px;
+  height: 80px;
+  margin: 2%;
+}
+
+.img-div:hover {
+  width: 120px;
+  height: 100px;
+  z-index: 100;
+  position: absolute;
+}
+
+.containers .welcome {
+  margin-top: 5%;
+  background-color: rgba(0, 17, 13, 0.6);
+}
+
+.blinking {
+  animation: blinkingText 1.3s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  49% {
+    color: rgb(255, 255, 255);
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: white;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.card {
+  width: 40vw;
+  height: 50vh;
+  margin-left: 40%;
+  font-size: 1.52rem;
+  background-color: rgba(26, 117, 98, 0.9);
+}
+
+.card h3 {
+  font-size: 3rem;
+}
+
+.phrase {
+  font-size: 1.52rem;
+}
