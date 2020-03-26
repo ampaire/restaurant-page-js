@@ -1,6 +1,6 @@
 body {
   background-image: url(images/display.jpg);
-  background-size: 600px 800px;
+  background-size: 600px auto;
   background-repeat: no-repeat;
   background-color: rgb(26, 117, 98);
   overflow: hidden;
