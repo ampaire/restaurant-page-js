@@ -1,8 +1,8 @@
-# RESTAURANT PAGE
+<h1 align = "center"> RESTAURANT PAGE </h1>
 
 ![screenshot](page.png)
 
-The main purpose of this project is to make a restaurant page using Javascript. The content on the page was populated using JavaScript modules. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page) from the [microverse](https://www.microverse.org/)  JavaScript curriculum.
+The main purpose of this project is to make a restaurant page using JavaScript. The content on the page was populated using JavaScript modules. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page) from the [microverse](https://www.microverse.org/)  JavaScript curriculum.
 
 ## FEATURES
 - Homepage
